@@ -14,13 +14,13 @@ public class RecipeController {
     @Autowired
     private InMemoryUserDetailsManager userDetailsManager;
 
-    @PostMapping("/addd")
+    @PostMapping("/addduser")
     public String addUser(@RequestParam String username,
                           @RequestParam String password,
                           @RequestParam String role) {
 
         if (userDetailsManager.userExists(username)) {
-            return "User already exists!";
+            return "User is already exists!";
         }
 
         UserDetails newUser = User.withUsername(username)
