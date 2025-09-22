@@ -14,7 +14,7 @@ public class RecipeController {
     @Autowired
     private InMemoryUserDetailsManager userDetailsManager;
 
-    @PostMapping("/addduser")
+    @PostMapping("/addd")
     public String addUser(@RequestParam String username,
                           @RequestParam String password,
                           @RequestParam String role) {
