@@ -36,7 +36,7 @@ jobs:
 
       # 6. Upload JAR as GitHub Artifact
       - name: Upload JAR
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: spring-boot-app
           path: target/*.jar
